@@ -1,9 +1,0 @@
-﻿CREATE TABLE [dbo].[People]
-(
-	[PersonId] INT NOT NULL PRIMARY KEY IDENTITY,
-	[FirstName] VARCHAR(100) NOT NULL,
-	[LastName] VARCHAR(100) NOT NULL,
-	[DateOfBirth] DATETIME NOT NULL,
-	[EmailAddress] VARCHAR(100) NOT NULL,
-	[Gender] VARCHAR(100) NOT NULL	
-)
