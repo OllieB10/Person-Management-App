@@ -12,9 +12,8 @@ namespace DataAccess
         {
             using (IDbConnection connection = new SqlConnection(connectionString))
             {
+                // Opens the connection to the database.
                 connection.Open();
-
-                // var state = connection.State;
 
                 List<T> rows = connection.Query<T>(sqlStatement, parameters).ToList();
 
